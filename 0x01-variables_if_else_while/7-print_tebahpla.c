@@ -1,30 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
 /**
- * main - function to test +ve and -ve int
+ * main - function to print alphabeth in reverse
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+int main(void)
+
 	{
-	printf("%d is positive\n", n);
-	}
-	else if (n < 0)
+	char ch;
+
+	for (ch = 'z'; ch >= 'a'; ch--)
 	{
-	printf("%d is negative\n", n);
+	putchar (ch);
 	}
-	else
-	{
-	printf("%d is zero\n", n);
-	}
+	putchar ('\n');
 	return (0);
-}
+	}
