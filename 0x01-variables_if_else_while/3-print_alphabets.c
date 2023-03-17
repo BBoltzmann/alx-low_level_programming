@@ -1,30 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
 /**
- * main - function to test +ve and -ve int
+ * main - function to identify last digit of int
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+int main(void)
+
 	{
-	printf("%d is positive\n", n);
-	}
-	else if (n < 0)
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-	printf("%d is negative\n", n);
+	putchar (ch);
 	}
-	else
+	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
-	printf("%d is zero\n", n);
+	putchar (ch);
 	}
+	putchar ('\n');
 	return (0);
-}
+	}
