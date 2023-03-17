@@ -1,30 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-
 /**
- * main - function to test +ve and -ve int
+ * main - function to hexadecimal
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+int main(void)
+
 	{
-	printf("%d is positive\n", n);
-	}
-	else if (n < 0)
+	int h;
+
+	for (h = 0; h < 10; h++)
 	{
-	printf("%d is negative\n", n);
+	putchar (i + '0');
 	}
-	else
+	for (h = 0; h < 6; h++)
 	{
-	printf("%d is zero\n", n);
+	putchar(h + 'a');
 	}
+	putchar ('\n');
 	return (0);
-}
+	}
