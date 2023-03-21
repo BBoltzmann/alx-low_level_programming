@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * main - Program that prints _putchar
@@ -12,8 +11,8 @@ char ch;
 
         for (ch = 'a'; ch <= 'z'; ch++)
         {
-        putchar (ch);
+        _putchar (ch);
         }
-        putchar ('\n');
+        _putchar ('\n');
         return;
 }
