@@ -1,16 +1,15 @@
 #include "main.h"
 /**
- * main - Program that prints _putchar
- *
- * Return: Always 0 (Success)
+ * _isalpha - function that identiifies alphabeth
+ *@c: is a int value of ASCII
+ * Return: 1
  */
 
 int _isalpha(int c)
 {
-
-        if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-        {
-        return (1);
-        }
-        return (0);
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	{
+	return (1);
+	}
+	return (0);
 }

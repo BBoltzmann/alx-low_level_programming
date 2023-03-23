@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * main - Program that prints _putchar
+ * jack_bauer - function that prints int
  *
- * Return: Always 0 (Success)
+ * Return: No return
  */
 
 void jack_bauer(void)
@@ -13,7 +13,7 @@ void jack_bauer(void)
 	{
 	for (b = 0; b <= 9; b++)
 	{
-	if((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
+	if ((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
 	{
 	for (c = 0; c <= 5; c++)
 	{

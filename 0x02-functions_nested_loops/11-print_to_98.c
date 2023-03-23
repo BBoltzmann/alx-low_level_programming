@@ -1,11 +1,10 @@
 #include "main.h"
 #include "stdio.h"
 /**
- * main - hey
+ * print_to_98 - function that prints to 98
+ * @n: any int
  *
- * main - Program that prints _putchar
- *
- * Return: Always 0 (Success)
+ * Return: no return
  */
 
 void print_to_98(int n)
@@ -16,13 +15,16 @@ void print_to_98(int n)
 	{
 	if (n == 98)
 	{
-	printf("%d,", n);
-	printf("\n");
+	_putchar (n + '0');
+	_putchar (44);
+	_putchar (10);
 	break;
 	}
 	else
 	{
-	printf("%d, ", n);
+	_putchar (n + '0');
+	_putchar (44);
+	_putchar (32);
 	}
 	}
 	}
@@ -32,13 +34,15 @@ void print_to_98(int n)
 	{
 	if (n == 98)
         {
-        printf("%d,", n);
-	printf("\n");
+	_putchar (n + '0');
+	_putchar (44);
+	_putchar (10);
         break;
 	}
 	else
 	{
-	printf("%d,", n);
+	_putchar (n + '0');
+	_putchar (44);
 	}
 	}
 	}
