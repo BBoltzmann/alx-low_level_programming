@@ -1,17 +1,22 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strlen - Program that returns he lenght of a char
+ * print_rev - Program that reverses input string to output
  * @s: char with pointer
  * Return: 1 if c is in int 0-9 and 0 otherwise
  */
 
-int _strlen(char *s)
+void print_rev(char *s)
 {
 	int c = 0;
 
-	/* (*s++) move to the end of s value location */
-	while (*s++)
+	/* loop to the end of string */
+	while (s[c] != '\0')
 	c++;
-	return (c);
+	/* loop backward */
+	for (c -= 1; c >= 0; c--)
+	{
+	_putchar(s[c]);
+	}
+	_putchar('\n');
 }
