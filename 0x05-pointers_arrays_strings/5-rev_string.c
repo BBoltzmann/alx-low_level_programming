@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include "2-strlen.c"
 /**
  * rev_string - Program that reverses input string without putchar
  * @s: char with pointer
@@ -8,17 +9,15 @@
 
 void rev_string(char *s)
 {
-	int len = 0, index = 0;
-	char temp;
+	char *begin = s;
+	char *end = s + _strlen(s) - 1;
 
-	/* loop to the end of string */
-	while (s[index++] != '\0')
-	len++;
-	/* loop backward */
-	for (index -= 1; index >= 0; index--)
+	while (begin < end)
 	{
-	temp = s[index];
-	s[index] = s[len - index -1];
-	s[len - index - 1] = temp;
+	char temp = *begin;
+	*begin = *end;
+	*end = temp;
+	begin++;
+	end--;
 	}
 }
