@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * puts_half - Program that prints a string to stdout
+ * puts_half - Program that prints half of input string to stdout
  * @str: char with pointer
  * Return: void
  */
