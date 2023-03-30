@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strncat - Program that prints elements in an array
+ * _strncpy - Program that prints elements in an array
  * @dest: destination value
  * @src: source value
  * @n: size of src
@@ -17,5 +17,5 @@ char *_strncpy(char *dest, char *src, int n)
 	for ( ; i < n; i++)
 	dest[i] = '\0';
 
-	return dest; 
+	return (dest);
 }
