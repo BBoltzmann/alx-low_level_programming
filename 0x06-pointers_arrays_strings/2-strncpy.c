@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strncpy - Program that prints elements in an array
+ * _strncpy - Program that copies a string
  * @dest: destination value
  * @src: source value
  * @n: size of src

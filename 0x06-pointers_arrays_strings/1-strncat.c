@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strncat - Program that prints elements in an array
+ * _strncat - Program that concatenates two strings
  * @dest: destination value
  * @src: source value
- * @n: iyet
+ * @n: size of src
  * Return: Void
  */
 

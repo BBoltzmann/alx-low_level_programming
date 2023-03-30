@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcat - Program that prints elements in an array
+ * _strcat - Program that concatenates two strings
  * @dest: destination value
  * @src: source value
  * Return: Void
