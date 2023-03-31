@@ -1,35 +1,26 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *cap_string - Program that capitalizes all words of a string
+ * *leet - Program that encodes a string into 1337
  * @s: char pointer
  * Return: Void
  */
 
-char *cap_string(char *s)
+char *leet(char *s)
 {
-	int i = 0;
+	char *p, *ptr;
+	char *leet_table = "4433007711";
 
-	while (s[i])
+	for (ptr = s; *ptr; ptr++)
 	{
-	while (!(s[i] >= 'a' && s[i] <= 'z'))
-	i++;
-	if (s[i - 1] == ' ' ||
-	s[i - 1] == '\t' ||
-	s[i - 1] == '\n' ||
-	s[i - 1] == ',' ||
-	s[i - 1] == ';' ||
-	s[i - 1] == '.' ||
-	s[i - 1] == '!' ||
-	s[i - 1] == '?' ||
-	s[i - 1] == '"' ||
-	s[i - 1] == '(' ||
-	s[i - 1] == ')' ||
-	s[i - 1] == '{' ||
-	s[i - 1] == '}' ||
-	i == 0)
-	s[i] -= 32;
-	i++;
+	for (p = "aAeEoOtTlL"; *p; p++)
+	{
+	if (*ptr == *p)
+	{
+	*ptr = leet_table[p - "aAeEoOtTlL"];
+	break;
+	}
+	}
 	}
 	return (s);
 }
