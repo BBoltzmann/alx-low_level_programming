@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * *print_number - Program that encodes string using rot13.
- * @n: int 
+ * @n: int
  * Return: Void
  */
 
