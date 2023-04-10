@@ -1,25 +1,23 @@
 #include "main.h"
 #include <stdio.h>
+#include "2-strchr.c"
 /**
- * __strpbrk - Program that searches a string for any of a set of bytes.
+ * _strpbrk - Program that searches a string for any of a set of bytes.
  * @s: char pointer
  * @accept: char pointer
  * Return: int
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int a = 0;
+	char *s_ptr, *accept_ptr;
 
-	while (*s)
+	for (s_ptr = s; *s_ptr != '\0'; s_ptr++)
 	{
-	for (; accept[a]; a++)
-	{
-	if (*s == accept[a])
-	{
-	return (s - 1);
-	}
-	s++;
-	}
+		for (accept_ptr = accept; *accept_ptr != '\0'; accept_ptr++)
+		{
+			if (*s_ptr == *accept_ptr)
+				return ((char *) s_ptr);
+		}
 	}
 	return (NULL);
 }

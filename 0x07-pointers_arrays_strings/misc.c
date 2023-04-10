@@ -7,23 +7,23 @@
  * Return: int
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int a;
 	unsigned int b;
-	unsigned int c = 0;
 
-	for (a = 0; s[a] != '\0' && s[a] != 32; a++)
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		for (b = 0; b < 256 && accept[b] != '\0'; b++)
+		for (b = 0; b < 256; b++)
 		{
 			if (s[a] == accept[b])
 			{
-			c++;
+			putchar (s[a]);
+			return (s);
 			}
 		}
 		if (accept[a] == '\0')
-		return (c);
+		return (NULL);
 	}
-	return (c);
+	return (NULL);
 }
