@@ -3,23 +3,18 @@
 /**
  * find_sqrt - helper function to recursively find square root
  * @n: integer to find the square root of
- * @left: left bound of search interval
- * @right: right bound of search interval
+ * @i: integer eqauls 1
  * Return: integer square root of n within search interval, or -1 if not found
  */
-int find_sqrt(int n, int left, int right)
+int find_sqrt(int n, int i)
 {
-	int mid = (left + right) / 2;
-	int mid_sq = mid * mid;
+	int sq = i * i;
 
-	if (left > right)
+	if (sq > n)
 		return (-1);
-	else if (mid_sq == n)
-		return (mid);
-	else if (mid_sq < n)
-		return (find_sqrt(n, mid + 1, right));
-	else
-		return (find_sqrt(n, left, mid - 1));
+	if (sq == n)
+		return (i);
+	return (find_sqrt(n, i + 1));
 }
 
 /**
@@ -34,5 +29,5 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (find_sqrt(n, 0, n));
+	return (find_sqrt(n, 1));
 }
