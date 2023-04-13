@@ -1,17 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _puts_recursion - Program that prints a string to stdout
+ * _print_rev_recursion - Program that prints a string in reverse
  * @s: char with pointer
  * Return: void
  */
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		_putchar('\n');
 		return;
 	}
+	_print_rev_recursion(s + 1);
 	_putchar(*s);
-	_puts_recursion(s + 1);
 }
